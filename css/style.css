@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(193, 38%, 86%);
+  --secondary-color: hsl(150, 100%, 66%);
+  --third-color: hsl(217, 19%, 38%);
+  --forth-color: hsl(217, 19%, 24%);
+  --fifth-color: hsl(218, 23%, 16%);
+  --font-size-quote: 28px;
+  --font-family: "Manrope", sans-serif;
+}
+
+body {
+  position: relative;
+  font-family: var(--font-family);
+  background-color: var(--fifth-color);
+}
+
+.adviser {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: var(--forth-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.adviser h2 {
+  font-size: 15px;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.adviser p {
+  font-size: var(--font-size-quote);
+  color: var(--primary-color);
+  font-weight: 500;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.divider {
+  width: 90%;
+  margin: 13px 0;
+}
+
+button {
+  margin-bottom: -35px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  transition: all 0.5s;
+}
+
+button:hover {
+  box-shadow: 0 0 8px 2px var(--secondary-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .adviser {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .adviser {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .adviser {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .adviser p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .adviser {
+    width: 90%;
+  }
+}
